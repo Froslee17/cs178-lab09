@@ -1,8 +1,7 @@
 import boto3
 
-dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('Playlist')
-
+REGION = "us-east-1"
+TABLE_NAME = "Playlist"
 
 def print_song(song):
     print(f"Song Title: {song.get('SongTitle')}")
